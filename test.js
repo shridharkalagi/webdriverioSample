@@ -1,5 +1,4 @@
-
- var webdriverio= require('webdriverio');
+var webdriverio= require('webdriverio');
 var options = {
     desiredCapabilities: {
         browserName: 'firefox'
