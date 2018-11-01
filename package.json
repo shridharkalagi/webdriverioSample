@@ -1,0 +1,29 @@
+{
+  "name": "webdriveriosample",
+  "version": "1.0.0",
+  "description": "## Steps to execute 1. `java -jar -Dwebdriver.gecko.driver=./geckodriver selenium-server-standalone-3.5.3.jar` 2. `node test.js` 3. `./node_modules/.bin/wdio wdio.conf.js`",
+  "main": "test.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "wdio-mocha-framework": "^0.6.2",
+    "webdriverio": "^4.13.1"
+  },
+  "devDependencies": {
+    "wdio-spec-reporter": "^0.1.5"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shridharkalagi/webdriverioSample.git"
+  },
+  "author": "Shridhar Kalagi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shridharkalagi/webdriverioSample/issues"
+  },
+  "homepage": "https://github.com/shridharkalagi/webdriverioSample#readme"
+}

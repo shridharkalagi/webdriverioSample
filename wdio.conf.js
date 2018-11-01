@@ -44,7 +44,7 @@ exports.config = {
         // 5 instances get started at a time.
         maxInstances: 5,
         //
-        browserName: 'firefox'
+        browserName: 'chrome'
     }],
     //
     // ===================
@@ -124,7 +124,8 @@ exports.config = {
     // The only one supported by default is 'dot'
     // see also: http://webdriver.io/guide/reporters/dot.html
     // reporters: ['dot'],
-    //
+    logDir: __dirname,
+    // reporters: ['spec'],
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
     mochaOpts: {
@@ -143,8 +144,14 @@ exports.config = {
      * @param {Object} config wdio configuration object
      * @param {Array.<Object>} capabilities list of capabilities details
      */
-    // onPrepare: function (config, capabilities) {
-    // },
+     onPrepare: function() {
+        // eslint-disable-next-line
+        console.log('In onPrepare hook')
+        },
+     onComplete: function() {
+        // eslint-disable-next-line
+        console.log('In onComplete hook')
+        }
     /**
      * Gets executed just before initialising the webdriver session and test framework. It allows you
      * to manipulate configurations depending on the capability or spec.
