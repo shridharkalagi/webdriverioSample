@@ -6,5 +6,7 @@ describe('webdriver.io page1', function() {
         var title = browser.getTitle();
         console.log(title);
         assert.equal(title, 'WebdriverIO - WebDriver bindings for Node.js');
+        console.log(title);
+        console.log('test');
     });
 });
